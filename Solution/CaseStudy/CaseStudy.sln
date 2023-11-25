@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Application", "Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Infrastructure", "CaseStudy.Infrastructure\CaseStudy.Infrastructure.csproj", "{835E76E9-AD50-470C-A561-73B386E573A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Persistence", "CaseStudy.Persistence\CaseStudy.Persistence.csproj", "{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{835E76E9-AD50-470C-A561-73B386E573A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{835E76E9-AD50-470C-A561-73B386E573A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{835E76E9-AD50-470C-A561-73B386E573A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
