@@ -1,7 +1,3 @@
-﻿
+﻿Console.WriteLine("CaseStudy.Training");
 
-Console.WriteLine("CaseStudy.Training");
-
-
-
-Console.ReadLine();
+Console.ReadKey();
