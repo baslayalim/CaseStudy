@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Infrastructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Persistence", "CaseStudy.Persistence\CaseStudy.Persistence.csproj", "{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Api", "CaseStudy.Api\CaseStudy.Api.csproj", "{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
