@@ -1,11 +1,48 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "CaseStudy.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "CaseStudy.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CaseStudy.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaseStudy.Application.dll": {}
+        }
+      },
+      "CaseStudy.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CaseStudy.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CaseStudy.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CaseStudy.Application/1.0.0": {
+      "type": "project",
+      "path": "../CaseStudy.Application/CaseStudy.Application.csproj",
+      "msbuildProject": "../CaseStudy.Application/CaseStudy.Application.csproj"
+    },
+    "CaseStudy.Domain/1.0.0": {
+      "type": "project",
+      "path": "../CaseStudy.Domain/CaseStudy.Domain.csproj",
+      "msbuildProject": "../CaseStudy.Domain/CaseStudy.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "CaseStudy.Application >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\SemihHanoglu\\.nuget\\packages\\": {},
@@ -39,7 +76,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\SemihHanoglu\\source\\repos\\baslayalim\\CaseStudy\\Solution\\CaseStudy\\CaseStudy.Application\\CaseStudy.Application.csproj": {
+              "projectPath": "C:\\Users\\SemihHanoglu\\source\\repos\\baslayalim\\CaseStudy\\Solution\\CaseStudy\\CaseStudy.Application\\CaseStudy.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
