@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaseStudy.Persistence.Migrations
 {
     [DbContext(typeof(CaseStudyDbContext))]
-    [Migration("20240210155025_mig-0")]
-    partial class mig0
+    [Migration("20240218165743_mig-3")]
+    partial class mig3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -87,6 +87,26 @@ namespace CaseStudy.Persistence.Migrations
                     b.HasIndex("CustomerId");
 
                     b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("CaseStudy.Domain.Entities.Parameter", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("State")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Parameters");
                 });
 
             modelBuilder.Entity("CaseStudy.Domain.Entities.Product", b =>

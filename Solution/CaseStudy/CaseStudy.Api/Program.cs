@@ -1,4 +1,7 @@
 using CaseStudy.Persistence;
+using CaseStudy.Persistence.Contexts;
+using Microsoft.EntityFrameworkCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,5 +33,13 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+
+
+
+using var scope = app.Services.CreateScope();
+await using var dbContext = scope.ServiceProvider.GetRequiredService<CaseStudyDbContext>();
+await dbContext.Database.MigrateAsync();
+
 
 app.Run();

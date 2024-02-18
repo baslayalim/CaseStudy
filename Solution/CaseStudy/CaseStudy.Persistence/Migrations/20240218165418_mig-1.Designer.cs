@@ -4,6 +4,7 @@ using CaseStudy.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaseStudy.Persistence.Migrations
 {
     [DbContext(typeof(CaseStudyDbContext))]
-    partial class CaseStudyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240218165418_mig-1")]
+    partial class mig1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -100,6 +103,9 @@ namespace CaseStudy.Persistence.Migrations
 
                     b.Property<int>("State")
                         .HasColumnType("int");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

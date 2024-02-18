@@ -29,6 +29,20 @@ namespace CaseStudy.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Parameters",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    State = table.Column<int>(type: "int", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Parameters", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
                 {
@@ -104,6 +118,9 @@ namespace CaseStudy.Persistence.Migrations
         {
             migrationBuilder.DropTable(
                 name: "OrderProduct");
+
+            migrationBuilder.DropTable(
+                name: "Parameters");
 
             migrationBuilder.DropTable(
                 name: "Orders");
