@@ -4,6 +4,7 @@ using CaseStudy.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaseStudy.Persistence.Migrations
 {
     [DbContext(typeof(CaseStudyDbContext))]
-    partial class CaseStudyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240227180648_mig-4")]
+    partial class mig4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -58,10 +61,7 @@ namespace CaseStudy.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers", t =>
-                        {
-                            t.HasComment("Müşteri Tablosu - Müşteri Bİlgileri Tutulur");
-                        });
+                    b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("CaseStudy.Domain.Entities.Order", b =>

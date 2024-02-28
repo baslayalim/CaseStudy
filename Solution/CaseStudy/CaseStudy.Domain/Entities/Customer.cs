@@ -10,15 +10,18 @@ using System.Threading.Tasks;
 
 namespace CaseStudy.Domain.Entities
 {
+    [Comment("Müşteri Tablosu - Müşteri Bİlgileri Tutulur")] 
     public class Customer : BaseEntity
     {
         [Required]
         [MaxLength(200)]
         [Column(Order = 0)]
+        [Comment("Müşteri İsmi Tutulur")]
         public string? Name { get; set; }
          
 
         [Column(TypeName = "varchar(300)", Order = 1)]
+        [Comment("Müşteri Soyismi Tutulur")]
         public string? SurName { get; set; }
         public short? State { get; set; }
 
@@ -29,6 +32,7 @@ namespace CaseStudy.Domain.Entities
 
 
         [Column("local_storage_table")]
+        [Comment("Sayfaya Ait Js Kodunun Tutulduğu Alan")]
 
         public int JsCode { get; set; }
 
