@@ -12,7 +12,7 @@ namespace CaseStudy.Training.DesignPatterns.Creational.AbstractFactory
         {
             AbstractFactoryCustomOperation customOperation = new AbstractFactoryCustomOperation(new AbstractFactoryOracleDatabaseFactory());
             customOperation.RemoveById(1);
-            
+            customOperation.GetById(1);
         }
     }
 }

@@ -12,6 +12,13 @@ namespace CaseStudy.Training.DesignPatterns.Creational.AbstractFactory
         {
             // Gelen sorgunun çalıştırılması için
             // Gerekli operasyonel işlemler...
+            Console.WriteLine("Delete Çalıştırıldı");
+        }
+        public override void GetCommand(string query)
+        {
+            // Gelen sorgunun çalıştırılması için
+            // Gerekli operasyonel işlemler...
+            Console.WriteLine("Select Çalıştırıldı");
         }
     }
 }

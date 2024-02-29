@@ -26,5 +26,13 @@ namespace CaseStudy.Training.DesignPatterns.Creational.AbstractFactory
             _connection.CloseConnection();
             Console.WriteLine("Delete : " + id + Environment.NewLine + _databaseFactory.ToString());
         }
+        
+        public void GetById(int id)
+        {
+            _connection.OpenConnection();
+            _command.GetCommand("Select ...");
+            _connection.CloseConnection();
+            Console.WriteLine("Select : " + id + Environment.NewLine + _databaseFactory.ToString());
+        }
     }
 }
