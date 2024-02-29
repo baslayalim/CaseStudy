@@ -16,6 +16,5 @@ namespace CaseStudy.Training.DesignPatterns.Creational.Singleton
             bool isEquals = firstInstanceRequest == secondInstanceRequest;
             Console.WriteLine($"Database referance is equals: {isEquals}");
         }
-
     }
 }
