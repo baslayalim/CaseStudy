@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace CaseStudy.Training.DesignPatterns.Creational.AbstractFactory
 {
-    class AbstractFactoryCustomOperation
+    class CreationalAbstractFactoryCustomOperation
     {
-        AbstractFactoryIDatabaseFactory _databaseFactory;
-        AbstractFactoryConnection _connection;
-        AbstractFactoryCommand _command;
+        CreationalAbstractFactoryIDatabaseFactory _databaseFactory;
+        CreationalAbstractFactoryConnection _connection;
+        CreationalAbstractFactoryCommand _command;
 
-        public AbstractFactoryCustomOperation(AbstractFactoryIDatabaseFactory databaseFactory)
+        public CreationalAbstractFactoryCustomOperation(CreationalAbstractFactoryIDatabaseFactory databaseFactory)
         {
             _databaseFactory = databaseFactory;
             _command = databaseFactory.CreateCommand();

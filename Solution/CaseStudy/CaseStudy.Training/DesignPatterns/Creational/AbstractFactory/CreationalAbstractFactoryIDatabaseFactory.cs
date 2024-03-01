@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CaseStudy.Training.DesignPatterns.Creational.AbstractFactory
 {
-    interface AbstractFactoryIDatabaseFactory
+    interface CreationalAbstractFactoryIDatabaseFactory
     {
-        AbstractFactoryConnection CreateConnection();
-        AbstractFactoryCommand CreateCommand();
+        CreationalAbstractFactoryConnection CreateConnection();
+        CreationalAbstractFactoryCommand CreateCommand();
     }
 }

@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace CaseStudy.Training.DesignPatterns.Creational.AbstractFactory
 {
-    public abstract class AbstractFactoryCommand
+    abstract class CreationalAbstractFactoryConnection
     {
-        public abstract void ExecuteCommand(string query);
-        public abstract void GetCommand(string query);
-         
+        public abstract bool OpenConnection();
+        public abstract bool CloseConnection();
     }
 }

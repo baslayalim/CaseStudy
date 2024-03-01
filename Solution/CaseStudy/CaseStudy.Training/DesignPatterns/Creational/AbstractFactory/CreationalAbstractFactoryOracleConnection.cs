@@ -6,18 +6,14 @@ using System.Threading.Tasks;
 
 namespace CaseStudy.Training.DesignPatterns.Creational.AbstractFactory
 {
-    class AbstractFactoryOracleConnection : AbstractFactoryConnection
+    class CreationalAbstractFactoryOracleConnection : CreationalAbstractFactoryConnection
     {
         public override bool OpenConnection()
         {
-            // Oracle veri tabanı bağlantısının açılması için
-            // Gerekli operasyonel işlemler...
             return true;
         }
         public override bool CloseConnection()
         {
-            // Oracle veri tabanı bağlantısının kapatılması için
-            // Gerekli operasyonel işlemler...
             return true;
         }
     }
