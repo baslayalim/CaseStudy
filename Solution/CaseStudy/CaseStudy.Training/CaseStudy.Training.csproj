@@ -11,4 +11,14 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DesignPatterns\Structural\Adapter\" />
+    <Folder Include="DesignPatterns\Structural\Bridge\" />
+    <Folder Include="DesignPatterns\Structural\Composite\" />
+    <Folder Include="DesignPatterns\Structural\Decorator\" />
+    <Folder Include="DesignPatterns\Structural\Facade\" />
+    <Folder Include="DesignPatterns\Structural\Flyweight\" />
+    <Folder Include="DesignPatterns\Structural\Proxy\" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,23 @@
 ﻿
 
+
+// Structural (Yapısal) Design Patterns
+// Birden fazla sınıfın bir işi yerine getirirken nasıl
+// davranacağını belirlemek için kullanılan desenlerdir. 
+
+
+
+
+// Behavioral(Davranışsal) Design Pattern
+// Nesnelerin birbirleri ile ilişkisini düzenleyen desendir.
+
+
+
+// Creational (Yaratımsal) Design Patterns
+// Nesnelerin oluşturulmasında ve yönetilmesinde kullanılan bir desendir.
+// Bu program akışında hangi nesneye ihtiyaç varsa onu oluşturmada esneklik ve kolaylık sağlar.
+#region Creational
+
 // Design Patterns # Creational # Olusturucu # Prototype
 // Prototype tasarım deseni, mevcut nesnelerin prototiplerinin oluşturulmasını yani
 // nesnelerin kopyalarını elde etmeyi sağlayan bir tasarım desenidir.
@@ -8,8 +26,6 @@
 // using CaseStudy.Training.DesignPatterns.Creational.Prototype;
 // CreationalPrototype.PrototypeCreate();
 // ##############################
-
-
 
 // Design Patterns # Creational # Olusturucu # Builder
 // Builder deseni, karmaşık yapıdaki nesnelerin oluşturulmasında istemcinin sadece nesne tipini
@@ -21,7 +37,6 @@
 // CreationalBuilder.BuildCreate();
 // ##############################
 
-
 // Design Patterns # Creational # Olusturucu # AbstractFactory
 // Abstract Factory Tasarım Deseni Birbirleri ile iliskili Urun Ailesini Olusturmak icin Bir Arayuz Saglar.
 // Örnek : Birden Fazla Veritabanı Desteklenmesi İçin Bir Yapının Oluşması
@@ -29,7 +44,6 @@
 // using CaseStudy.Training.DesignPatterns.Creational.AbstractFactory;
 // CreationalAbstractFactory.AbstractFactoryCreate();
 // ##############################
-
 
 // Design Patterns # Creational # Olusturucu # Factory
 // Factory Tasarım Deseni Birbirleri ile iliskili Nesneleri Olusturmak icin Bir Arayuz Saglar ve Alt 
@@ -40,7 +54,6 @@
 // CreationalFactory.CreateFactory();
 // ##############################
 
-
 // Design Patterns # Creational # Olusturucu # Singleton
 // Bir Sinifin Sadece Bir Ornegi Olmalıdır Ve Bu Ornege Global Bir Erisim Noktasi Saglanmalıdır.
 // Ornek : Connection Olusturmada Tek Nesne Uretme
@@ -48,6 +61,13 @@
 // using CaseStudy.Training.DesignPatterns.Creational.Singleton;
 // CreationalSingleton.CreateDatabase();
 // ##############################  
+
+#endregion
+
+
+
+
+
 
 
 // General
