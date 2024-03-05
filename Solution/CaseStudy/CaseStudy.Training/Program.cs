@@ -5,11 +5,20 @@
 // Birden fazla sınıfın bir işi yerine getirirken nasıl
 // davranacağını belirlemek için kullanılan desenlerdir. 
 
+#region Structural
+
+// Design Patterns # Structural # Yapısal # Adapter
+// Bir sınıfın arayüzünü istemcinin beklediği arayüze çevirmeye yarar.
+// Ornek : Json cevirme islemleri gibi islemleri kodları bozmadan yenisini yazma 
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Structural.Adapter;
+// StructuralAdapter.JsonAdapter();
+// ##############################
+
+#endregion
 
 
 
-// Behavioral(Davranışsal) Design Pattern
-// Nesnelerin birbirleri ile ilişkisini düzenleyen desendir.
 
 
 
@@ -22,6 +31,10 @@
 // Prototype tasarım deseni, mevcut nesnelerin prototiplerinin oluşturulmasını yani
 // nesnelerin kopyalarını elde etmeyi sağlayan bir tasarım desenidir.
 // Nesnelerin Kopyalanmasını Sağlayan Yapı
+// Shallow Copy ve Deep Copy olmak üzere iki tür nesne kopyalama işlemi mevcuttur.
+// Shallow Copy ile nesnelerin bellekteki adresleri kopyalanmaktadır
+// Deep Copy ile nesneler birebir kopyalanabilmekte
+// Örnek : Bir Entity Kopyalama
 // ##############################
 // using CaseStudy.Training.DesignPatterns.Creational.Prototype;
 // CreationalPrototype.PrototypeCreate();
@@ -32,6 +45,7 @@
 // belirterek üretimi gerçekleştirebilmesini sağlamak için kullanılan bir desendir.
 // Bu desende istemcinin kullanmak istediği gerçek ürünün birden fazla sunumunun olduğu durumlarda kullanılır.
 // Bir Grup İşlemde 
+// Ornek : Ders Gruplarının indirimleri , Personellerin Aktiflik Pasiflik Durumları 
 // ##############################
 // using CaseStudy.Training.DesignPatterns.Creational.Builder;
 // CreationalBuilder.BuildCreate();
@@ -60,9 +74,18 @@
 // ##############################
 // using CaseStudy.Training.DesignPatterns.Creational.Singleton;
 // CreationalSingleton.CreateDatabase();
-// ##############################  
+// ##############################
 
 #endregion
+
+
+
+// Behavioral(Davranışsal) Design Pattern
+// Nesnelerin birbirleri ile ilişkisini düzenleyen desendir.
+
+
+
+
 
 
 
