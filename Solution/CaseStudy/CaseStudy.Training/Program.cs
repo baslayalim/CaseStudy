@@ -15,6 +15,23 @@
 // StructuralAdapter.JsonAdapter();
 // ##############################
 
+
+
+// 
+// Bağımsız olarak geliştirilebilir iki yapı elde etmemize yarar.
+
+using CaseStudy.Training.DesignPatterns.Structural.Bridge;
+StructuralBridge.Bridge();
+
+
+
+
+//using CaseStudy.Training.DesignPatterns.Structural.Composite;
+//StructuralComposite.Composite();
+
+
+
+
 #endregion
 
 

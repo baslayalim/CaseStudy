@@ -12,8 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DesignPatterns\Structural\Bridge\" />
-    <Folder Include="DesignPatterns\Structural\Composite\" />
     <Folder Include="DesignPatterns\Structural\Decorator\" />
     <Folder Include="DesignPatterns\Structural\Facade\" />
     <Folder Include="DesignPatterns\Structural\Flyweight\" />
