@@ -9,25 +9,34 @@
 
 // Design Patterns # Structural # Yapısal # Adapter
 // Bir sınıfın arayüzünü istemcinin beklediği arayüze çevirmeye yarar.
-// Ornek : Json cevirme islemleri gibi islemleri kodları bozmadan yenisini yazma 
+// Ornek : Json cevirme islemleri gibi islemleri kodları bozmadan Adapter ile yenisini yazma 
 // ##############################
 // using CaseStudy.Training.DesignPatterns.Structural.Adapter;
 // StructuralAdapter.JsonAdapter();
 // ##############################
 
 
-
-// 
+// Design Patterns # Structural # Yapısal # Bridge
 // Bağımsız olarak geliştirilebilir iki yapı elde etmemize yarar.
+// Sisteminizde 2 farklı yapı grubu var. Bu grupların farklı farklı gerçekleştirimleri bulunuyor.
+// Bu yapıların birbirlerini gerçekleştirim seviyesi bilmesi yerine belli interface(arayüzler)
+// üzerinden referanslarını tutarak kullanması, karmaşık hiyerarşik yapıların önüne geçecektir.
+// Ornek : Mail ve Sms Gonderme Gibi Sistemlerin Bir biriyle iliskisi
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Structural.Bridge;
+// StructuralBridge.Bridge();
+// ##############################
 
-using CaseStudy.Training.DesignPatterns.Structural.Bridge;
-StructuralBridge.Bridge();
 
-
-
-
-//using CaseStudy.Training.DesignPatterns.Structural.Composite;
-//StructuralComposite.Composite();
+// Design Patterns # Structural # Yapısal # Composite
+// Composite tasarım deseni, nesneleri ağaç yapısına göre düzenleyerek
+// Ağaç yapısındaki alt üst ilişkisini kurmaya yarayan bir desendir.
+// Composite Birçok parçalardan oluşan anlamına gelmektedir.
+// Ornek : Menu ve Rol gibi ast ust iliskilerde kullanılabilir
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Structural.Composite;
+// StructuralComposite.Composite();
+// ##############################
 
 
 

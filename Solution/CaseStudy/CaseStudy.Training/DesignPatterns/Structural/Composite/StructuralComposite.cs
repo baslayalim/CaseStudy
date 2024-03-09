@@ -4,24 +4,27 @@
     {
         public static void Composite()
         {
-            StructuralCompositeProductCatalog items = new StructuralCompositeProductCatalog("Ürünler");
-            StructuralCompositeProductCatalog phones = new StructuralCompositeProductCatalog("Telefonlar");
-            StructuralCompositeProductCatalog iPhone = new StructuralCompositeProductCatalog("iPhone Telefonlar");
-            StructuralCompositeProductCatalog samsung = new StructuralCompositeProductCatalog("Samsung Telefonlar");
+            StructuralCompositeProductCatalog humanSoft = new StructuralCompositeProductCatalog("  -> HumanSoft" + Environment.NewLine);
+            StructuralCompositeProductCatalog project = new StructuralCompositeProductCatalog("    -> Projeler" + Environment.NewLine);
+            StructuralCompositeProductCatalog isbank = new StructuralCompositeProductCatalog("     -> İşbank Crm" );
+            StructuralCompositeProductCatalog akbank = new StructuralCompositeProductCatalog("     -> Akbank Crm");
 
-            StructuralCompositeProduct iphone5Item = new StructuralCompositeProduct("iPhone 5 Telefon");
-            StructuralCompositeProduct samsungGalaxyItem = new StructuralCompositeProduct("Samsung Galaxy Telefon");
+            StructuralCompositeProduct isBankMobil = new StructuralCompositeProduct("         -> İşbank Mobil");
+            StructuralCompositeProduct isBankWeb = new StructuralCompositeProduct("         -> İşbank Web" + Environment.NewLine);
+            StructuralCompositeProduct akbankAdayPortal = new StructuralCompositeProduct("         -> Akbank Aday Portal");
 
-            items.Add(phones);
+            humanSoft.Add(project);
 
-            phones.Add(iPhone);
-            phones.Add(samsung);
+            project.Add(isbank);
+            project.Add(akbank);
 
-            iPhone.Add(iphone5Item);
+            isbank.Add(isBankMobil);
+            isbank.Add(isBankWeb);
 
-            samsung.Add(samsungGalaxyItem);
+            akbank.Add(akbankAdayPortal); 
 
-            items.DrawHierarchy();
+
+            humanSoft.DrawHierarchy();
         }
     }
 }
