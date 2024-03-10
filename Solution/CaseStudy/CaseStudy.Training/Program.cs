@@ -63,9 +63,20 @@
 // Flyweight tasarım deseni, sık kullanılan nesnelerin bellek yönetimini kontrol etmesi için
 // kullanılan bir tasarım desenidir.
 // Ornek : 2 Farklı Kutunun Bir kez üretilmesi ve yönetilmesi
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Structural.Flyweight;
+// StructuralFlyweight.Flyweight();
+// ##############################
 
-using CaseStudy.Training.DesignPatterns.Structural.Flyweight;
-StructuralFlyweight.Flyweight();
+// Design Patterns # Structural # Yapısal # Proxy # Vekil
+// Proxy tasarım deseni, istemcinin orijinal nesneye direkt erişimi yerine bu erişimi nesneyi
+// temsil eden proxy (vekil) sınıflar üzerinden gerçekleştirmesini ve bu proxy (vekil)
+// sınıfların sunduğu imkanları kullanmasını sağlayan tasarım desenidir.
+// Ornek : Veritabanı Kayıt Yapılmadan Once Yapılan Kontroller
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Structural.Proxy;
+// StructuralProxy.Proxy();
+// ##############################
 
 #endregion
 
