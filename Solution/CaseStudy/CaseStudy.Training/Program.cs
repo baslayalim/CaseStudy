@@ -39,7 +39,14 @@
 // ##############################
 
 
-
+// Design Patterns # Structural # Yapısal # Decorator
+// Decorator tasarım deseni, nesnelere dinamik olarak yeni sorumluluklar atamamızı sağlayan tasarım desenidir.
+// Bildirim yapısı oluşturulduğunu düşünelim Email ve Sms Bildirimlerine Birde Mobil Bildirimi Ekleyebiliriz
+// Ornek : Bir Log Sistemi Gelistirdik ve Mevcut Yapıyı Bozmadan Sıkıstırma Ozelligini Eklemek İstiyoruz
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Structural.Decorator;
+// StructuralDecorator.Decorator();
+// ##############################
 
 #endregion
 

@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DesignPatterns\Structural\Decorator\" />
     <Folder Include="DesignPatterns\Structural\Facade\" />
     <Folder Include="DesignPatterns\Structural\Flyweight\" />
     <Folder Include="DesignPatterns\Structural\Proxy\" />
