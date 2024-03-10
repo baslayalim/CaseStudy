@@ -7,7 +7,7 @@
 
 #region Structural
 
-// Design Patterns # Structural # Yapısal # Adapter
+// Design Patterns # Structural # Yapısal # Adapter # Adapte - Uyarlama
 // Bir sınıfın arayüzünü istemcinin beklediği arayüze çevirmeye yarar.
 // Ornek : Json cevirme islemleri gibi islemleri kodları bozmadan Adapter ile yenisini yazma 
 // ##############################
@@ -16,7 +16,7 @@
 // ##############################
 
 
-// Design Patterns # Structural # Yapısal # Bridge
+// Design Patterns # Structural # Yapısal # Bridge # Köprü
 // Bağımsız olarak geliştirilebilir iki yapı elde etmemize yarar.
 // Sisteminizde 2 farklı yapı grubu var. Bu grupların farklı farklı gerçekleştirimleri bulunuyor.
 // Bu yapıların birbirlerini gerçekleştirim seviyesi bilmesi yerine belli interface(arayüzler)
@@ -28,7 +28,7 @@
 // ##############################
 
 
-// Design Patterns # Structural # Yapısal # Composite
+// Design Patterns # Structural # Yapısal # Composite # Birleştirme - Katlama
 // Composite tasarım deseni, nesneleri ağaç yapısına göre düzenleyerek
 // Ağaç yapısındaki alt üst ilişkisini kurmaya yarayan bir desendir.
 // Composite Birçok parçalardan oluşan anlamına gelmektedir.
@@ -39,7 +39,7 @@
 // ##############################
 
 
-// Design Patterns # Structural # Yapısal # Decorator
+// Design Patterns # Structural # Yapısal # Decorator # Dekorasyon
 // Decorator tasarım deseni, nesnelere dinamik olarak yeni sorumluluklar atamamızı sağlayan tasarım desenidir.
 // Bildirim yapısı oluşturulduğunu düşünelim Email ve Sms Bildirimlerine Birde Mobil Bildirimi Ekleyebiliriz
 // Ornek : Bir Log Sistemi Gelistirdik ve Mevcut Yapıyı Bozmadan Sıkıstırma Ozelligini Eklemek İstiyoruz
@@ -47,6 +47,18 @@
 // using CaseStudy.Training.DesignPatterns.Structural.Decorator;
 // StructuralDecorator.Decorator();
 // ##############################
+
+
+// Design Patterns # Structural # Yapısal # Facade # Dışgörünüş - Cephe
+// Facade tasarım deseni, bir alt sistemdeki arayüzlere bir birleşik arayüz sağlayarak
+// Alt sistemin kullanımını daha kolay hale getirmeyi amaçlar.
+// Ornek : Kredi Kartı Kara Liste ve Oluşturma islemleri
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Structural.Facade;
+// StructuralFacade.Facade();
+// ##############################
+
+
 
 #endregion
 
