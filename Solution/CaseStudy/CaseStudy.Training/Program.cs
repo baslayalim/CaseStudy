@@ -59,6 +59,13 @@
 // ##############################
 
 
+// Design Patterns # Structural # Yapısal # Flyweight # Sinek Ağırlık
+// Flyweight tasarım deseni, sık kullanılan nesnelerin bellek yönetimini kontrol etmesi için
+// kullanılan bir tasarım desenidir.
+// Ornek : 2 Farklı Kutunun Bir kez üretilmesi ve yönetilmesi
+
+using CaseStudy.Training.DesignPatterns.Structural.Flyweight;
+StructuralFlyweight.Flyweight();
 
 #endregion
 

@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DesignPatterns\Structural\Flyweight\" />
     <Folder Include="DesignPatterns\Structural\Proxy\" />
   </ItemGroup>
 
