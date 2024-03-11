@@ -15,6 +15,17 @@
 // ##############################
 
 
+// Design Patterns # Behavioral # Davranissal # Command # Komut Verme
+// Kullanıcı isteklerini gerçekleştiren kod yapısını sarmallayarak nesneler halinde saklanmasını daha sonra da
+// Bu isteklerin gerçekleştirilmesini veya geri alınmasını sağlayan tasarım desenidir.
+// Ornek : Sepet islemlerinde ürünlerin sepete eklenirken kontrolleri sipariş tamamlanırken alınabilir onayları
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.Command;
+// BehavioralCommand.Command();
+// ##############################
+
+
+
 
 
 #endregion
