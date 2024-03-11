@@ -1,6 +1,27 @@
 ﻿
 
 
+// Behavioral(Davranışsal) Design Pattern
+// Nesnelerin birbirleri ile ilişkisini düzenleyen desendir.
+
+#region Behavioral
+
+// Design Patterns # Behavioral # Davranissal # Chain of Responsibility # Sorumluluk Zinciri
+// Bir amaca yönelik bir dizi işlemi gerçekleştiren nesnelerin birbirinden bağımsız bir şekilde çalışmasını
+// Ornek : Resim format cevirme islemlerinin yapilmasi
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.ChainOfResponsibility;
+// BehavioralChainOfResponsibility.ChainOfResponsibility();
+// ##############################
+
+
+
+
+#endregion
+
+
+
+
 // Structural (Yapısal) Design Patterns
 // Birden fazla sınıfın bir işi yerine getirirken nasıl
 // davranacağını belirlemek için kullanılan desenlerdir. 
@@ -80,12 +101,7 @@
 
 #endregion
 
-
-
-
-
-
-// Creational (Yaratımsal) Design Patterns
+// Creational (Olusturma) Design Patterns
 // Nesnelerin oluşturulmasında ve yönetilmesinde kullanılan bir desendir.
 // Bu program akışında hangi nesneye ihtiyaç varsa onu oluşturmada esneklik ve kolaylık sağlar.
 #region Creational
@@ -143,8 +159,7 @@
 
 
 
-// Behavioral(Davranışsal) Design Pattern
-// Nesnelerin birbirleri ile ilişkisini düzenleyen desendir.
+
 
 
 
