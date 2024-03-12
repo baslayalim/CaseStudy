@@ -27,6 +27,17 @@
 
 
 
+// Design Patterns # Behavioral # Davranissal # Interpreter # Tercüman - Aracı
+// Belli bir düzen veya kurala göre sıralanmış verilerin, yorumlanarak istenilen çıktı üretmesini sağlar.
+// Ornek : Rollere göre kod verilerek 2 geliştirici, 1 muhasebeci, 1 takım lideri olarak toplamda 18000 maliyeti Interpreter tasarım deseni kullanarak yapılabilir
+// Ornek : Depo yönetiminde ürünlerin konulduğu birimlere göre işlemler yapılabilir 
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.interpreter;
+// Behavioralinterpreter.interpreter();
+// ##############################
+
+
+
 
 #endregion
 
