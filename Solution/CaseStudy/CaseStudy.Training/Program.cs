@@ -13,6 +13,7 @@
 // BehavioralChainOfResponsibility.ChainOfResponsibility();
 // ##############################
 
+
 // Design Patterns # Behavioral # Davranissal # Command # Komut Verme
 // Kullanıcı isteklerini gerçekleştiren kod yapısını sarmallayarak nesneler halinde saklanmasını daha sonra da
 // Bu isteklerin gerçekleştirilmesini veya geri alınmasını sağlayan tasarım desenidir.
@@ -22,6 +23,7 @@
 // BehavioralCommand.Command();
 // ##############################
 
+
 // Design Patterns # Behavioral # Davranissal # Interpreter # Tercüman - Aracı
 // Belli bir düzen veya kurala göre sıralanmış verilerin, yorumlanarak istenilen çıktı üretmesini sağlar.
 // Ornek : Rollere göre kod verilerek 2 geliştirici, 1 muhasebeci, 1 takım lideri olarak toplamda 18000 maliyeti Interpreter tasarım deseni kullanarak yapılabilir
@@ -30,6 +32,7 @@
 // using CaseStudy.Training.DesignPatterns.Behavioral.interpreter;
 // Behavioralinterpreter.interpreter();
 // ##############################
+
 
 // Design Patterns # Behavioral # Davranissal # Iterator # Yineleyici - Tekrarlayıcı
 // Koleksiyon üzerindeki elemanların üzerinde dolaşmak için kullanılan tasarım desenidir
@@ -64,7 +67,13 @@
 // ##############################
 
 
-
+// Design Patterns # Behavioral # Davranissal # Observer # Gozlemci
+// Bir nesnede meydana gelen değişikliği içinde bulunduğu listedeki tüm elemanlara bildiren tasarım desenidir.
+// Ornek : Etliekmek fiyatı dusunce takip eden kisilere bildirim gitmesi
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.Observer;
+// BehavioralObserver.Observer();
+// ##############################
 
 
 #endregion
