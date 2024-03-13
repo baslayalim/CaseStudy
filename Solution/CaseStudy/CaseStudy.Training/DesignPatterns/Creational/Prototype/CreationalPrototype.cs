@@ -4,11 +4,9 @@
     {
         public static void PrototypeCreate()
         {
-            Employee semy = new Employee("semy", "han");
-            Employee semyGulizar = semy.Clone();
-
-            // Aynı nesne örneklerini farklı referanslarda tutuyor.
-            // Birbirinin aynısı ve farklı referanslarda olan nesneler elde ettik.
+            CreationalPrototypeEmployee semy = new CreationalPrototypeEmployee("semy", "han");
+            CreationalPrototypeEmployee semyGulizar = semy.Clone();
+            
             Console.WriteLine(semy == semyGulizar);
         }
     }

@@ -3,7 +3,6 @@
 
 // Behavioral(Davranışsal) Design Pattern
 // Nesnelerin birbirleri ile ilişkisini düzenleyen desendir.
-
 #region Behavioral
 
 // Design Patterns # Behavioral # Davranissal # Chain of Responsibility # Sorumluluk Zinciri
@@ -14,7 +13,6 @@
 // BehavioralChainOfResponsibility.ChainOfResponsibility();
 // ##############################
 
-
 // Design Patterns # Behavioral # Davranissal # Command # Komut Verme
 // Kullanıcı isteklerini gerçekleştiren kod yapısını sarmallayarak nesneler halinde saklanmasını daha sonra da
 // Bu isteklerin gerçekleştirilmesini veya geri alınmasını sağlayan tasarım desenidir.
@@ -24,9 +22,6 @@
 // BehavioralCommand.Command();
 // ##############################
 
-
-
-
 // Design Patterns # Behavioral # Davranissal # Interpreter # Tercüman - Aracı
 // Belli bir düzen veya kurala göre sıralanmış verilerin, yorumlanarak istenilen çıktı üretmesini sağlar.
 // Ornek : Rollere göre kod verilerek 2 geliştirici, 1 muhasebeci, 1 takım lideri olarak toplamda 18000 maliyeti Interpreter tasarım deseni kullanarak yapılabilir
@@ -35,6 +30,29 @@
 // using CaseStudy.Training.DesignPatterns.Behavioral.interpreter;
 // Behavioralinterpreter.interpreter();
 // ##############################
+
+// Design Patterns # Behavioral # Davranissal # Iterator # Yineleyici - Tekrarlayıcı
+// Koleksiyon üzerindeki elemanların üzerinde dolaşmak için kullanılan tasarım desenidir
+// Ornek : Bir sınıftaki elemanların üzerinde ilerleme işlemi
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.iterator;
+// Behavioraliterator.iterator();
+// ##############################
+
+
+// Design Patterns # Behavioral # Davranissal # Mediator # Arabulucu
+// Aynı tipteki veya aynı arayüzü uygulayan nesneler arasında iletişimi sağlayan tasarım desenidir.
+// Nesneler arasında direkt iletişim kurmaktansa, ortaya bir ara sınıf (Mediator) koyarak tüm haberleşme işlerini
+// bu ortak nesne üzerinden gerçekleştirerek direkt olarak birbirileri ile haberleşmelerini engellemektir bu desendeki amacımız. 
+// Bunların yanı sıra sınıfların sayısı arttıkça, aralarındaki bağımlılıklar da artar, uygulamanın bakımı ve değiştirilmesi zorlaşır.
+// Mediator tasarım deseni, bu sınıflar arasındaki bağımlılıkları azaltmaya ve aralarındaki iletişimi kolaylaştırmaya da yarar.
+// Ornek : Online bir sohbet odası olduğu ve bu odada kullanıcıların 1-1 görüşme yaptıkları kabul edilsin.
+// Desen gereği kullanıcılar direkt birbirleri ile iletişim kuramayacakları için işlemler Mediator üzerinden gerçekleştirilecektir.
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.Mediator;
+// BehavioralMediator.Mediator();
+// ##############################
+
 
 
 
@@ -47,7 +65,6 @@
 // Structural (Yapısal) Design Patterns
 // Birden fazla sınıfın bir işi yerine getirirken nasıl
 // davranacağını belirlemek için kullanılan desenlerdir. 
-
 #region Structural
 
 // Design Patterns # Structural # Yapısal # Adapter # Adapte - Uyarlama
@@ -122,6 +139,8 @@
 // ##############################
 
 #endregion
+
+
 
 // Creational (Olusturma) Design Patterns
 // Nesnelerin oluşturulmasında ve yönetilmesinde kullanılan bir desendir.

@@ -1,25 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CaseStudy.Training.DesignPatterns.Creational.Prototype
+﻿namespace CaseStudy.Training.DesignPatterns.Creational.Prototype
 {
-    class Employee : IClonablePrototype<Employee>
+    class CreationalPrototypeEmployee : IClonablePrototype<CreationalPrototypeEmployee>
     {
         string firstName;
         string lastName;
 
-        public Employee(string firstName, string lastName)
+        public CreationalPrototypeEmployee(string firstName, string lastName)
         {
             this.firstName = firstName;
             this.lastName = lastName;
         }
 
-        public Employee Clone()
+        public CreationalPrototypeEmployee Clone()
         {
-            return base.MemberwiseClone() as Employee;
+            return base.MemberwiseClone() as CreationalPrototypeEmployee;
         }
     }
 }
