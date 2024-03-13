@@ -54,6 +54,16 @@
 // ##############################
 
 
+// Design Patterns # Behavioral # Davranissal # Memento # Hatıra
+// Bir nesnenin önceki durumunu kaydetmemizi ve istenildiği takdirde eski haline dönmemizi sağlayan tasarım desenidir.
+// Ornek : Metin editörü geliştirdiğimizi ve bu metin editöründe önceki yazdıklarımıza
+// ve o anki cursor pozisyonuna geri dönebildiğimizi düşünelim.
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.Memento;
+// BehavioralMemento.Memento();
+// ##############################
+
+
 
 
 
