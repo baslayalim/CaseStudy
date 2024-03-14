@@ -76,6 +76,18 @@
 // ##############################
 
 
+
+// Design Patterns # Behavioral # Davranissal # State # Durum
+// Bir nesnenin iç durumu değiştiğinde meydana gelecek değişimler sonrası çalışma zamanında
+// dinamik olarak farklı davranışları sergileyebilmesini sağlayan bir tasarım desenidir.
+// Ornek : Konya fırın kebabı Sipariş İşlemleri
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.State;
+// BehavioralState.State();
+// ##############################
+
+
+
 #endregion
 
 
