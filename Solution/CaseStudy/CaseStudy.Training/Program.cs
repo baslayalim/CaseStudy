@@ -1,6 +1,13 @@
 ﻿
 
 
+
+
+
+
+#region DesingPatern
+
+
 // Behavioral(Davranışsal) Design Pattern
 // Nesnelerin birbirleri ile ilişkisini düzenleyen desendir.
 #region Behavioral
@@ -88,9 +95,47 @@
 
 
 
+// Design Patterns # Behavioral # Davranissal # Strategy # Strateji
+// Her biri ayrı bir sınıf olan işlemleri değiştirilebilir hale getirilerek kullanılan tasarım modeli
+// Bir işlemin birden fazla yapılması, çalışma zamanında algoritma değişikliği gibi durumlarda kullanılır
+// Karışık if-else durumundan da kurtarır
+// Ornek : E-ticaret projesinin ödeme kısmını düşünelim.
+// Ödeme metotları arasında; kredi kartı, Paypal gibi seçenekler kullanılabilir
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.Strategy;
+// BehavioralStrategy.Strategy();
+// ##############################
+
+
+// Design Patterns # Behavioral # Davranissal # Template # Şablon
+// Üst sınıflarda bir algoritma iskeleti tanımlamamızı ve alt sınıfların algoritma iskeleti
+// Yapısını bozmadan belirli adımları yeniden tanımlamasını (override) sağlayan tasarım desenidir.
+// Ornek : geçen haftanın verilerinin analizinin yapılıp en sonda da bizlere bir çıktı,
+// rapor verilğini düşünelim. Burada rapor verme süreçleri farklılık gösterebilir.
+// XML formatında da bir rapor hazırlanabilir ya da HTML formatında da
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.Template;
+// BehavioralTemplate.Template();
+// ##############################
+
+
+
+
+// Design Patterns # Behavioral # Davranissal # Visitor # Ziyaretçi
+// Üzerinde çalıştığımız nesnelerin sınıflarını değiştirmeden
+// Yeni bir özellik tanımlamamızı sağlayan bir tasarım desenidir.
+// İşlem yapılacak nesnelerde herhangi bir değişiklik yapılmaz. İşlemi ziyaretçi (Visitor)
+// Nesneleri yapar. Eğer sisteme yeni nesneler eklenmiyor, fakat sık sık yeni işlemlerin
+// Eklenmesi gerekiyorsa bu tasarım deseni kullanılabilir. Bu tasarım deseninin
+// Kullanılmasıyla, yapılacak işlemle ilgili kodların merkezi bir nesnede toplanır.
+// Ornek : Elimizde kitaplarımızın olduğunu ve bu kitap bilgilerinin farklı şekillerde
+// Xml ya da Json gibi çıktılarının alındığını düşünelim.
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Behavioral.Visitor;
+// BehavioralVisitor.Visitor();
+// ##############################
+
 #endregion
-
-
 
 
 // Structural (Yapısal) Design Patterns
@@ -172,7 +217,6 @@
 #endregion
 
 
-
 // Creational (Olusturma) Design Patterns
 // Nesnelerin oluşturulmasında ve yönetilmesinde kullanılan bir desendir.
 // Bu program akışında hangi nesneye ihtiyaç varsa onu oluşturmada esneklik ve kolaylık sağlar.
@@ -230,18 +274,7 @@
 #endregion
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+#endregion
 
 // General
 // Abstract Kullanımı
@@ -257,6 +290,17 @@
 // using CaseStudy.Training.General;
 // Console.WriteLine(CaseDbConnect.CaseConnect());
 // ##############################
+
+
+
+
+
+
+
+
+
+
+
 
 
 Console.ReadKey();
