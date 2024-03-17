@@ -3,8 +3,6 @@
 
 
 
-
-
 #region DesingPatern
 
 
