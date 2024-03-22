@@ -1,4 +1,7 @@
-﻿namespace CaseStudy.Api.Controllers
+﻿using CaseStudy.Application.Abstractions; 
+using Microsoft.AspNetCore.Mvc;
+
+namespace CaseStudy.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

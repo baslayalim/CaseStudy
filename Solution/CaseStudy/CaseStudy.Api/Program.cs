@@ -1,3 +1,9 @@
+using CaseStudy.Application.AppSettings;
+using CaseStudy.Persistence;
+using CaseStudy.Persistence.Contexts;
+using Microsoft.EntityFrameworkCore;
+
+
 var builder = WebApplication.CreateBuilder(args);
 AppSettings.Loading(builder.Configuration);
 

@@ -1,4 +1,5 @@
 ﻿using CaseStudy.Application.AppSettings.AppSettingsEntity;
+using Microsoft.Extensions.Configuration;
 
 namespace CaseStudy.Application.AppSettings
 {
