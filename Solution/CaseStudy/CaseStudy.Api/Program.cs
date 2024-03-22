@@ -1,11 +1,5 @@
-using CaseStudy.Persistence;
-using CaseStudy.Persistence.Contexts;
-using Microsoft.EntityFrameworkCore;
-using System;
-
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
+AppSettings.Loading(builder.Configuration);
 
 builder.Services.AddPersistenceServices();
 

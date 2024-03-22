@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using CaseStudy.Persistence.Contexts;
-using Microsoft.Extensions.DependencyInjection;
+﻿using CaseStudy.Persistence.Contexts;
 
 namespace CaseStudy.Persistence
 {
