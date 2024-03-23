@@ -8,7 +8,7 @@ namespace CaseStudy.Persistence
     {
         public static void AddPersistenceServices(this IServiceCollection services)
         {
-            services.AddDbContext<CaseStudyDbContext>(options => options.UseSqlServer("Server=GNB028;Database=CaseStudyDb_7;Trusted_Connection=SSPI;Encrypt=false;TrustServerCertificate=true;"));
+            services.AddDbContext<CaseStudyDbContext>(options => options.UseSqlServer(Application.AppSettings.AppSettings.ConnectionString));
 
             //  Update-Database
             //  add-migration mig-0
