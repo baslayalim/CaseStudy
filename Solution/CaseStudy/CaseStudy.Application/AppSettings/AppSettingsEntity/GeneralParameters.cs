@@ -3,7 +3,7 @@
     public class GeneralParameters
     {
         public bool ProjectStatus { get; set; }
-        public string ProjectTitle { get; set; }
-        public string ProjecDescription { get; set; }
+        public string? ProjectTitle { get; set; }
+        public string? ProjecDescription { get; set; }
     }
 }

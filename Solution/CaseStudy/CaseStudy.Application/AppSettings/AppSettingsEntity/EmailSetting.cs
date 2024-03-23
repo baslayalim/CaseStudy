@@ -10,6 +10,6 @@
         public int Port { get; set; }
         public bool Ssl { get; set; }
         public bool? Status { get; set; }
-        public bool? Type { get; set; }
+        public string? Code { get; set; }
     }
 }
