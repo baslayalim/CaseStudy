@@ -1,11 +1,29 @@
 ﻿
- 
+
+
+
+
+
+
+
+
 
 #region DesingPatern
 
 
 // Behavioral(Davranışsal) Design Pattern
 // Nesnelerin birbirleri ile ilişkisini düzenleyen desendir.
+// ChainOfResponsibility
+// Command
+// interpreter
+// iterator
+// Mediator
+// Memento
+// Observer
+// State
+// Strategy
+// Template
+// Visitor
 #region Behavioral
 
 // Design Patterns # Behavioral # Davranissal # Chain of Responsibility # Sorumluluk Zinciri
@@ -137,6 +155,13 @@
 // Structural (Yapısal) Design Patterns
 // Birden fazla sınıfın bir işi yerine getirirken nasıl
 // davranacağını belirlemek için kullanılan desenlerdir. 
+// Adapter
+// Bridge
+// Composite
+// Decorator
+// Facade
+// Flyweight
+// Proxy
 #region Structural
 
 // Design Patterns # Structural # Yapısal # Adapter # Adapte - Uyarlama
@@ -216,6 +241,11 @@
 // Creational (Olusturma) Design Patterns
 // Nesnelerin oluşturulmasında ve yönetilmesinde kullanılan bir desendir.
 // Bu program akışında hangi nesneye ihtiyaç varsa onu oluşturmada esneklik ve kolaylık sağlar.
+// AbstractFactory
+// Builder
+// Factory
+// Prototype
+// Singleton
 #region Creational
 
 // Design Patterns # Creational # Olusturucu # Prototype
@@ -286,11 +316,6 @@
 // using CaseStudy.Training.General;
 // Console.WriteLine(CaseDbConnect.CaseConnect());
 // ##############################
-
-
-
-
-
 
 
 
