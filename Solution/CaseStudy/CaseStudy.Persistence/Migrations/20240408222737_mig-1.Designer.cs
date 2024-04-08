@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaseStudy.Persistence.Migrations
 {
     [DbContext(typeof(CaseStudyDbContext))]
-    [Migration("20240227180648_mig-4")]
-    partial class mig4
+    [Migration("20240408222737_mig-1")]
+    partial class mig1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -59,9 +59,15 @@ namespace CaseStudy.Persistence.Migrations
                         .HasColumnOrder(1)
                         .HasComment("Müşteri Soyismi Tutulur");
 
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Customers", t =>
+                        {
+                            t.HasComment("Müşteri Tablosu - Müşteri Bİlgileri Tutulur");
+                        });
                 });
 
             modelBuilder.Entity("CaseStudy.Domain.Entities.Order", b =>
@@ -79,11 +85,14 @@ namespace CaseStudy.Persistence.Migrations
                     b.Property<Guid?>("CustomerId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int?>("CustumerId")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("CustumerId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -107,6 +116,9 @@ namespace CaseStudy.Persistence.Migrations
                     b.Property<int>("State")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.ToTable("Parameters");
@@ -129,6 +141,9 @@ namespace CaseStudy.Persistence.Migrations
 
                     b.Property<int>("Stock")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

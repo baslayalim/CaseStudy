@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CaseStudy.Persistence.Migrations
 {
     [DbContext(typeof(CaseStudyDbContext))]
-    [Migration("20240218165743_mig-3")]
-    partial class mig3
+    [Migration("20240408212931_mig-0")]
+    partial class mig0
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,13 +36,15 @@ namespace CaseStudy.Persistence.Migrations
 
                     b.Property<int>("JsCode")
                         .HasColumnType("int")
-                        .HasColumnName("local_storage_table");
+                        .HasColumnName("local_storage_table")
+                        .HasComment("Sayfaya Ait Js Kodunun Tutulduğu Alan");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)")
-                        .HasColumnOrder(0);
+                        .HasColumnOrder(0)
+                        .HasComment("Müşteri İsmi Tutulur");
 
                     b.Property<string>("Phone")
                         .HasMaxLength(20)
@@ -54,11 +56,15 @@ namespace CaseStudy.Persistence.Migrations
 
                     b.Property<string>("SurName")
                         .HasColumnType("varchar(300)")
-                        .HasColumnOrder(1);
+                        .HasColumnOrder(1)
+                        .HasComment("Müşteri Soyismi Tutulur");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Customers", t =>
+                        {
+                            t.HasComment("Müşteri Tablosu - Müşteri Bİlgileri Tutulur");
+                        });
                 });
 
             modelBuilder.Entity("CaseStudy.Domain.Entities.Order", b =>
@@ -76,8 +82,8 @@ namespace CaseStudy.Persistence.Migrations
                     b.Property<Guid?>("CustomerId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int?>("CustumerId")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("CustumerId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");

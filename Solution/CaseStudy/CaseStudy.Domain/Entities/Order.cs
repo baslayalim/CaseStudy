@@ -9,7 +9,7 @@ namespace CaseStudy.Domain.Entities
 {
     public class Order : BaseEntity
     {
-        public int? CustumerId { get; set; }
+        public Guid? CustumerId { get; set; }
         public string? Description { get; set; }
         public string? Adress { get; set; }
 

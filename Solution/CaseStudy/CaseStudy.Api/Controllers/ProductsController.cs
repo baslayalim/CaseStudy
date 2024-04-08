@@ -23,7 +23,7 @@ namespace CaseStudy.Api.Controllers
         [HttpGet]
         public async Task Get()
         {
-            await _productWriteRepository.AddAsync(new Product { Name = "Test" , CreatedDate = DateTime.Now });
+            await _productWriteRepository.AddAsync(new Product { Name = "Test" });
             await _productWriteRepository.SaveAsync();
         }
 
@@ -31,6 +31,8 @@ namespace CaseStudy.Api.Controllers
         public async Task<IActionResult> Get(string id)
         {
             Product product = await _productReadRepository.GetByIdAsync(id);
+            product.Name = "Test-42";
+            await _productWriteRepository.SaveAsync();
             return Ok(product);
         }
 

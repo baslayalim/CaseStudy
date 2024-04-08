@@ -11,6 +11,7 @@ namespace CaseStudy.Domain.Entities.Common
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; } 
+        virtual public DateTime UpdatedDate { get; set; }
     }
 }

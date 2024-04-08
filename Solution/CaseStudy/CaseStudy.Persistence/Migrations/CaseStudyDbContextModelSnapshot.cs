@@ -56,6 +56,9 @@ namespace CaseStudy.Persistence.Migrations
                         .HasColumnOrder(1)
                         .HasComment("Müşteri Soyismi Tutulur");
 
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.ToTable("Customers", t =>
@@ -79,11 +82,14 @@ namespace CaseStudy.Persistence.Migrations
                     b.Property<Guid?>("CustomerId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int?>("CustumerId")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("CustumerId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -107,6 +113,9 @@ namespace CaseStudy.Persistence.Migrations
                     b.Property<int>("State")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
                     b.HasKey("Id");
 
                     b.ToTable("Parameters");
@@ -129,6 +138,9 @@ namespace CaseStudy.Persistence.Migrations
 
                     b.Property<int>("Stock")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

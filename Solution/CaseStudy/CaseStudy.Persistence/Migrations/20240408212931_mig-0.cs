@@ -15,18 +15,19 @@ namespace CaseStudy.Persistence.Migrations
                 name: "Customers",
                 columns: table => new
                 {
-                    Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    SurName = table.Column<string>(type: "varchar(300)", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false, comment: "Müşteri İsmi Tutulur"),
+                    SurName = table.Column<string>(type: "varchar(300)", nullable: true, comment: "Müşteri Soyismi Tutulur"),
                     Phone = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     State = table.Column<short>(type: "smallint", nullable: true),
-                    local_storage_table = table.Column<int>(type: "int", nullable: false),
+                    local_storage_table = table.Column<int>(type: "int", nullable: false, comment: "Sayfaya Ait Js Kodunun Tutulduğu Alan"),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Customers", x => x.Id);
-                });
+                },
+                comment: "Müşteri Tablosu - Müşteri Bİlgileri Tutulur");
 
             migrationBuilder.CreateTable(
                 name: "Parameters",
@@ -62,7 +63,7 @@ namespace CaseStudy.Persistence.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CustumerId = table.Column<int>(type: "int", nullable: true),
+                    CustumerId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Adress = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CustomerId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
