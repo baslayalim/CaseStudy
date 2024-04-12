@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Domain", "CaseStudy.Domain\CaseStudy.Domain.csproj", "{46683225-2ED0-4A7F-82F0-2582FBDAD292}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Domain", "CaseStudy.Domain\CaseStudy.Domain.csproj", "{46683225-2ED0-4A7F-82F0-2582FBDAD292}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Training", "CaseStudy.Training\CaseStudy.Training.csproj", "{BCF11C89-FFC0-4C57-B360-452DC4D6A314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Training", "CaseStudy.Training\CaseStudy.Training.csproj", "{BCF11C89-FFC0-4C57-B360-452DC4D6A314}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Application", "CaseStudy.Application\CaseStudy.Application.csproj", "{05901B51-F67F-43CF-866C-7233C7CA70FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Application", "CaseStudy.Application\CaseStudy.Application.csproj", "{05901B51-F67F-43CF-866C-7233C7CA70FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Infrastructure", "CaseStudy.Infrastructure\CaseStudy.Infrastructure.csproj", "{835E76E9-AD50-470C-A561-73B386E573A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Infrastructure", "CaseStudy.Infrastructure\CaseStudy.Infrastructure.csproj", "{835E76E9-AD50-470C-A561-73B386E573A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Persistence", "CaseStudy.Persistence\CaseStudy.Persistence.csproj", "{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Persistence", "CaseStudy.Persistence\CaseStudy.Persistence.csproj", "{1ADAE667-9258-4CD9-A9DB-BD49DAC8BF99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Api", "CaseStudy.Api\CaseStudy.Api.csproj", "{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Api", "CaseStudy.Api\CaseStudy.Api.csproj", "{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Web", "CaseStudy.Web\CaseStudy.Web.csproj", "{28FADF1B-5BF8-4EE7-A379-5A993624FC67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FADF1B-5BF8-4EE7-A379-5A993624FC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FADF1B-5BF8-4EE7-A379-5A993624FC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FADF1B-5BF8-4EE7-A379-5A993624FC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FADF1B-5BF8-4EE7-A379-5A993624FC67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

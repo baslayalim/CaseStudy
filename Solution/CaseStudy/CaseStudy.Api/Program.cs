@@ -7,6 +7,10 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 AppSettings.Loading(builder.Configuration);
 
+builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
+    policy.WithOrigins("https://localhost:7259").AllowAnyHeader().AllowAnyMethod().AllowCredentials()
+));
+
 builder.Services.AddPersistenceServices();
 
 builder.Services.AddControllers();
@@ -36,6 +40,7 @@ app.MapControllers();
 
 
 
+app.UseCors();
 
 using var scope = app.Services.CreateScope();
 await using var dbContext = scope.ServiceProvider.GetRequiredService<CaseStudyDbContext>();

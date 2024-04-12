@@ -26,6 +26,12 @@ namespace CaseStudy.Api.Controllers
             await _productWriteRepository.AddAsync(new Product { Name = "Test" });
             await _productWriteRepository.SaveAsync();
         }
+        [HttpGet("GetAll")]
+        public List<Product> GetAll()
+        {
+            List<Product> _getAll = _productReadRepository.GetAll().ToList();
+            return _getAll;
+        }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
