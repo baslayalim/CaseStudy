@@ -8,7 +8,7 @@
 </div>
 
 
-<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
+<form method="post" id="FrmCaseStudyForm" enctype="multipart/form-data" asp-controller="Home" asp-action="Index">
     <table>
         <tr>
             <td>First Name: </td>
@@ -33,7 +33,23 @@
 <script>
     function git() {
 
-        var xx = await fetch("https://localhost:7158/api/Products/GetAll");
-        document.getElementById("DivContent").innerHTML = xx; 
+        $.ajax({
+            url: "https://localhost:7158/api/Products/GetAll",
+            data: $(".FrmCaseStudyForm").serialize(), 
+            dataType: 'json',
+            success: function (e) {
+                // document.getElementById("DivContent").innerHTML += JSON.stringify(e);
+                arr = e;
+                $.each(arr, function (index, value) { 
+                    $('#DivContent').append('<br> <div id="' + value.id + '" class="card p-3 mb-3">' + value.name + '</div>');
+                });
+            },
+            error: function (e) {
+                console.log(JSON.stringify(e));
+                console.log('error');
+            }
+        });
+        return false; 
+        
     }
 </script>
