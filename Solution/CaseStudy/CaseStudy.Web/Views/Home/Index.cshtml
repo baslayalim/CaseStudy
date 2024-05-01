@@ -34,7 +34,7 @@
     function git() {
 
         $.ajax({
-            url: "https://localhost:7158/api/Products/GetAll",
+            url: "https://localhost:7158/api/Products",
             data: $(".FrmCaseStudyForm").serialize(), 
             dataType: 'json',
             success: function (e) {
