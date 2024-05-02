@@ -38,13 +38,22 @@ namespace CaseStudy.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
-            await _productWriteRepository.AddAsync(new()
+            //ModelState.AddModelError("Special Error", "Bad Request");
+            //return BadRequest(ModelState);
+            if (ModelState.IsValid)
             {
-                Name = model.Name,
-                Price = (long)model.Price,
-                Stock = model.Stock
-            });
-            await _productWriteRepository.SaveAsync();
+                // Do something with the product (not shown).
+
+            }
+
+            //await _productWriteRepository.AddAsync(new()
+            //{
+            //    Name = model.Name,
+            //    Price = (long)model.Price,
+            //    Stock = model.Stock,
+            //    Product_Description = model.Description
+            //});
+            //await _productWriteRepository.SaveAsync();
             return StatusCode((int)HttpStatusCode.Created);
         }
 

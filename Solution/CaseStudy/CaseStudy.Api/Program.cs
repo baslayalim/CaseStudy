@@ -1,6 +1,7 @@
 using CaseStudy.Application.AppSettings;
 using CaseStudy.Persistence;
 using CaseStudy.Persistence.Contexts;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -10,6 +11,11 @@ AppSettings.Loading(builder.Configuration);
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
     policy.WithOrigins("https://localhost:7259").AllowAnyHeader().AllowAnyMethod().AllowCredentials()
 ));
+
+builder.Services.AddControllers(options =>
+{
+    options.ModelMetadataDetailsProviders.Add(new SystemTextJsonValidationMetadataProvider());
+});
 
 builder.Services.AddPersistenceServices();
 
