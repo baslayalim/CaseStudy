@@ -1,4 +1,5 @@
 ﻿using CaseStudy.Application.Repositories;
+using CaseStudy.Application.RequestParameters;
 using CaseStudy.Application.ViewModels.Products;
 using CaseStudy.Domain.Entities;
 using CaseStudy.Persistence.Repositories;
@@ -23,6 +24,28 @@ namespace CaseStudy.Api.Controllers
             _productReadRepository = productReadRepository;
         }
 
+
+        [HttpGet("GetPagination")]
+        public Task<IActionResult> GetPagination([FromQuery] Pagination pagination)
+        {
+            var totalCount = _productReadRepository.GetAll(false).Count();
+            var products = _productReadRepository.GetAll(false).Skip(pagination.Page * pagination.Size).Take(pagination.Size).Select(p => new
+            {
+                p.Id,
+                p.Name,
+                p.Stock,
+                p.Price,
+                p.CreatedDate,
+                p.UpdatedDate
+            }).ToList();
+
+            return Task.FromResult<IActionResult>(Ok(new
+            {
+                totalCount,
+                products
+            }));
+        }
+
         [HttpGet]
         public Task<IActionResult> Get()
         {
@@ -36,7 +59,7 @@ namespace CaseStudy.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(VM_Create_Product model)
+        public Task<IActionResult> Post(VM_Create_Product model)
         {
             //ModelState.AddModelError("Special Error", "Bad Request");
             //return BadRequest(ModelState);
@@ -54,7 +77,7 @@ namespace CaseStudy.Api.Controllers
             //    Product_Description = model.Description
             //});
             //await _productWriteRepository.SaveAsync();
-            return StatusCode((int)HttpStatusCode.Created);
+            return Task.FromResult<IActionResult>(StatusCode((int)HttpStatusCode.Created));
         }
 
         [HttpPut]
