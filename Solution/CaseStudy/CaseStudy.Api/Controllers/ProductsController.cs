@@ -36,8 +36,9 @@ namespace CaseStudy.Api.Controllers
                 p.Stock,
                 p.Price,
                 p.CreatedDate,
-                p.UpdatedDate
-            }).ToList();
+                p.UpdatedDate,
+                p.OrderNumber
+            }).OrderBy(x => x.OrderNumber).ToList();
 
             return Task.FromResult<IActionResult>(Ok(new
             {
@@ -58,8 +59,9 @@ namespace CaseStudy.Api.Controllers
             return Ok(await _productReadRepository.GetByIdAsync(id, false));
         }
 
+
         [HttpPost]
-        public Task<IActionResult> Post(VM_Create_Product model)
+        public async Task<IActionResult> Post(VM_Create_Product model)
         {
             //ModelState.AddModelError("Special Error", "Bad Request");
             //return BadRequest(ModelState);
@@ -69,15 +71,15 @@ namespace CaseStudy.Api.Controllers
 
             }
 
-            //await _productWriteRepository.AddAsync(new()
-            //{
-            //    Name = model.Name,
-            //    Price = (long)model.Price,
-            //    Stock = model.Stock,
-            //    Product_Description = model.Description
-            //});
-            //await _productWriteRepository.SaveAsync();
-            return Task.FromResult<IActionResult>(StatusCode((int)HttpStatusCode.Created));
+            await _productWriteRepository.AddAsync(new()
+            {
+                Name = model.Name,
+                Price = (long)model.Price,
+                Stock = model.Stock,
+                Product_Description = model.Description
+            });
+            await _productWriteRepository.SaveAsync();
+            return StatusCode((int)HttpStatusCode.Created);
         }
 
         [HttpPut]
