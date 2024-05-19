@@ -1,3 +1,4 @@
+using CaseStudy.Api.CustomMiddleWares;
 using CaseStudy.Application.AppSettings;
 using CaseStudy.Persistence;
 using CaseStudy.Persistence.Contexts;
@@ -5,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.EntityFrameworkCore;
 
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 AppSettings.Loading(builder.Configuration);
 
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
@@ -23,7 +24,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
@@ -48,9 +49,11 @@ app.MapControllers();
 
 app.UseCors();
 
-using var scope = app.Services.CreateScope();
-await using var dbContext = scope.ServiceProvider.GetRequiredService<CaseStudyDbContext>();
-await dbContext.Database.MigrateAsync();
+//using var scope = app.Services.CreateScope();
+//await using var dbContext = scope.ServiceProvider.GetRequiredService<CaseStudyDbContext>();
+//await dbContext.Database.MigrateAsync();
 
+
+app.UseMiddleware<CaseStudyExceptionMiddleware>();
 
 app.Run();

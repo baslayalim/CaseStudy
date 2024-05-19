@@ -101,5 +101,12 @@ namespace CaseStudy.Api.Controllers
             return Ok();
         }
 
+        [HttpGet("TestMiddleWare")]
+        public String GetTestMiddleWare()
+        {
+            //throw new Exception("Test Error");
+            return "OK";
+        }
+
     }
 }
