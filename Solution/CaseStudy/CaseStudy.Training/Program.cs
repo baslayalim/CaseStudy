@@ -302,6 +302,14 @@
 
 #endregion
 
+
+
+
+
+
+
+#region #
+
 // General
 // Abstract Kullanımı
 // ##############################
@@ -316,7 +324,7 @@
 // using CaseStudy.Training.General;
 // Console.WriteLine(CaseDbConnect.CaseConnect());
 // ##############################
-
+#endregion
 
 
 Console.ReadKey();

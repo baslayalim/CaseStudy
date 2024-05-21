@@ -1,3 +1,4 @@
+using CaseStudy.Api.CustomDependencyInjection;
 using CaseStudy.Api.CustomMiddleWares;
 using CaseStudy.Application.AppSettings;
 using CaseStudy.Persistence;
@@ -17,6 +18,10 @@ builder.Services.AddControllers(options =>
 {
     options.ModelMetadataDetailsProviders.Add(new SystemTextJsonValidationMetadataProvider());
 });
+
+
+builder.Services.AddScoped<ICaseCategoryRepository, CategoryRepository>();
+
 
 builder.Services.AddPersistenceServices();
 
