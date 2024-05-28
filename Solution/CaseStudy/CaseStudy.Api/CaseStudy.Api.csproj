@@ -24,8 +24,4 @@
     <ProjectReference Include="..\CaseStudy.Persistence\CaseStudy.Persistence.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="CustomJwt\" />
-  </ItemGroup>
-
 </Project>
