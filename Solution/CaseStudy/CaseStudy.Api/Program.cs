@@ -1,4 +1,5 @@
 ﻿using CaseStudy.Api.CustomDependencyInjection;
+using CaseStudy.Api.CustomFolder;
 using CaseStudy.Api.CustomJwt;
 using CaseStudy.Api.CustomMiddleWares;
 using CaseStudy.Application.AppSettings;
@@ -16,6 +17,10 @@ builder.Services.AddControllers(options =>
 {
     options.ModelMetadataDetailsProviders.Add(new SystemTextJsonValidationMetadataProvider());
 });
+
+//builder.Services.AddScoped<ICaseStudyStorage, CaseStudyLocalStorage>();
+builder.Services.AddScoped<ICaseStudyStorage, CaseStudyAzureStorage>();
+
 
 builder.Services.AddJwtServices();
 builder.Services.AddScoped<ICaseCategoryRepository, CategoryRepository>();

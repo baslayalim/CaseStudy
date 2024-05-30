@@ -36,5 +36,12 @@ namespace CaseStudy.Web.Controllers
             return View();
         }
 
+
+
+        public IActionResult FileFolder()
+        {
+            return View();
+        }
+
     }
 }
