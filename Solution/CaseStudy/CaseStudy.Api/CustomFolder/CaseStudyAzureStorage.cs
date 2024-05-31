@@ -13,7 +13,7 @@ namespace CaseStudy.Api.CustomFolder
         BlobContainerClient? _blobContainerClient;
         public CaseStudyAzureStorage()
         {
-            _blobServiceClient = new("DefaultEndpointsProtocol=https;AccountName=semihsunumuser;AccountKey=wkg+Jv6lGfNYyAksgMhIAhMIc+MOe7rmfIld6sRD+D+0lSWiwcZYsU6ambW1IdaT49mxko85Ft9O+AStMFR0Uw==;EndpointSuffix=core.windows.net");
+            _blobServiceClient = new("");
         }
         public void DeleteAsync(string containerName, string fileName)
         {
@@ -58,7 +58,7 @@ namespace CaseStudy.Api.CustomFolder
         public async Task FileUploadAsync(IFormFileCollection files)
         {
             // Get the configurations and create share object
-            ShareClient share = new ShareClient("DefaultEndpointsProtocol=https;AccountName=semihsunumuser;AccountKey=wkg+Jv6lGfNYyAksgMhIAhMIc+MOe7rmfIld6sRD+D+0lSWiwcZYsU6ambW1IdaT49mxko85Ft9O+AStMFR0Uw==;EndpointSuffix=core.windows.net", "product-image");
+            ShareClient share = new ShareClient("", "product-image");
 
 
             // Create the share if it doesn't already exist
