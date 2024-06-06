@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CaseStudy.BasicAut.Api.Model;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CaseStudy.BasicAut.Api.Controllers
@@ -7,16 +8,42 @@ namespace CaseStudy.BasicAut.Api.Controllers
     [ApiController]
     public class UserProfilController : ControllerBase
     {
-        [HttpGet]
-        public Task<IActionResult> GetProfil()
+        private readonly IUserService _userService;
+        public UserProfilController(IUserService userService)
         {
-            return Task.FromResult<IActionResult>(Ok("UserProfil"));
+            _userService = userService; 
         }
 
-        [HttpGet("Detail")]
-        public Task<IActionResult> GetDetail()
+        [HttpPost("login")]
+        public IActionResult Login(LoginModel model)
         {
-            return Task.FromResult<IActionResult>(Ok("UserProfilDetail"));
+            var user = _userService.Login(model.Username, model.Password);
+
+            if (user == null)
+            {
+                return NotFound("Kullanıcı adı veya şifre yanlış!");
+            }
+
+            user.Password = "";
+
+            return Ok(user);
         }
+
+        [HttpGet("profile")]
+        [Authorize]
+        public IActionResult Profile()
+        {
+            return Ok("Profile");
+        }
+
+
+        [HttpGet("profile2")]
+        public IActionResult Profile2()
+        {
+            return Ok("Profile");
+        }
+
+
+
     }
 }
