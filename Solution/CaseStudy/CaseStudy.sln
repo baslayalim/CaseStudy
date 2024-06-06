@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Persistence", "Ca
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Api", "CaseStudy.Api\CaseStudy.Api.csproj", "{6C1B332D-E6A1-4E89-8E1D-14311E9FC56D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.Web", "CaseStudy.Web\CaseStudy.Web.csproj", "{28FADF1B-5BF8-4EE7-A379-5A993624FC67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy.Web", "CaseStudy.Web\CaseStudy.Web.csproj", "{28FADF1B-5BF8-4EE7-A379-5A993624FC67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseStudy.BasicAut.Api", "CaseStudy.BasicAut.Api\CaseStudy.BasicAut.Api.csproj", "{022CED1F-A2E8-4F52-A56F-97741F4487ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{28FADF1B-5BF8-4EE7-A379-5A993624FC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28FADF1B-5BF8-4EE7-A379-5A993624FC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28FADF1B-5BF8-4EE7-A379-5A993624FC67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{022CED1F-A2E8-4F52-A56F-97741F4487ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022CED1F-A2E8-4F52-A56F-97741F4487ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022CED1F-A2E8-4F52-A56F-97741F4487ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022CED1F-A2E8-4F52-A56F-97741F4487ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
