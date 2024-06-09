@@ -4,10 +4,6 @@
 
 
 
-
-
-
-
 #region DesingPatern
 
 
@@ -96,16 +92,6 @@
 // StructuralAdapter.JsonAdapter();
 // ##############################
 
-// Design Patterns # Structural # Yapısal # Proxy # Vekil
-// Proxy tasarım deseni, istemcinin orijinal nesneye direkt erişimi yerine bu erişimi nesneyi
-// temsil eden proxy (vekil) sınıflar üzerinden gerçekleştirmesini ve bu proxy (vekil)
-// sınıfların sunduğu imkanları kullanmasını sağlayan tasarım desenidir.
-// Ornek : Veritabanı Kayıt Yapılmadan Once Yapılan Kontroller
-// ##############################
-// using CaseStudy.Training.DesignPatterns.Structural.Proxy;
-// StructuralProxy.Proxy();
-// ##############################
-
 // Design Patterns # Structural # Yapısal # Decorator # Dekorasyon
 // Decorator tasarım deseni, nesnelere dinamik olarak yeni sorumluluklar atamamızı sağlayan tasarım desenidir.
 // Bildirim yapısı oluşturulduğunu düşünelim Email ve Sms Bildirimlerine Birde Mobil Bildirimi Ekleyebiliriz
@@ -124,6 +110,15 @@
 // StructuralFacade.Facade();
 // ##############################
 
+// Design Patterns # Structural # Yapısal # Proxy # Vekil
+// Proxy tasarım deseni, istemcinin orijinal nesneye direkt erişimi yerine bu erişimi nesneyi
+// temsil eden proxy (vekil) sınıflar üzerinden gerçekleştirmesini ve bu proxy (vekil)
+// sınıfların sunduğu imkanları kullanmasını sağlayan tasarım desenidir.
+// Ornek : Veritabanı Kayıt Yapılmadan Once Yapılan Kontroller
+// ##############################
+// using CaseStudy.Training.DesignPatterns.Structural.Proxy;
+// StructuralProxy.Proxy();
+// ##############################
 
 
 // Design Patterns # Structural # Yapısal # Flyweight # Sinek Ağırlık
@@ -288,12 +283,7 @@
 
 
 
-
-
-
-
 #endregion
-
 
 
 
