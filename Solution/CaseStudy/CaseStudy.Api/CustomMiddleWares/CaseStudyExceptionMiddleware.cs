@@ -20,8 +20,13 @@ namespace CaseStudy.Api.CustomMiddleWares
 
         public async Task Invoke(HttpContext httpContext)
         {
+
             if (httpContext.Request.Path.ToString() == "/api/Products/TestMiddleWare")
-                await httpContext.Response.WriteAsync("TestMiddleWare Hello !");
+                httpContext.Response.OnStarting(() =>
+                {
+                    httpContext.Response.WriteAsync("TestMiddleWare Hello !");
+                    return Task.CompletedTask;
+                });
 
             try
             {
