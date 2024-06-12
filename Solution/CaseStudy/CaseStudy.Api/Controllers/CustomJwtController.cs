@@ -22,7 +22,7 @@ namespace CaseStudy.Api.Controllers
                 Name = "Case Study",
                 UserName = "UserCaseStudy",
                 RefreshToken = customJwtHelper.CreateRefreshToken(),
-                Roles = { "Personnel" },
+                Roles = { "AdminPlus", "Personnel" },
                 RefreshTokenEndDate = DateTime.UtcNow.AddMinutes(customJwtHelper.RefreshTokenExpiration),
             });
 
