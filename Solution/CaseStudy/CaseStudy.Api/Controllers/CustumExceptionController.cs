@@ -30,5 +30,14 @@ namespace CaseStudy.Api.Controllers
 
             return Task.FromResult<IActionResult>(Ok("GetGeneralException Success"));
         }
+
+        [HttpGet("GetTest")]
+        public Task<IActionResult> GetTest()
+        {
+            int x = 3 + Convert.ToInt32("Beyza");
+
+            return Task.FromResult<IActionResult>(Ok("GetTest Success"));
+        }
+
     }
 }
