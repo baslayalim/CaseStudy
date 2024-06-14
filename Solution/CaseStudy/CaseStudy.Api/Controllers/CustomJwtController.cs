@@ -14,9 +14,11 @@ namespace CaseStudy.Api.Controllers
         {
             CustomJwtHelper customJwtHelper = new CustomJwtHelper();
 
+            Guid userGuid = Guid.Parse("976f89e8-b69d-44f1-b299-76ec240450a7");
+
             CustomJwtAccessToken CustomJwtAccessToken = customJwtHelper.CreateToken(new CustomJwtData
             {
-                Id = new Guid(),
+                Id = userGuid,
                 Description = "Test",
                 Email = "case@study.com",
                 Name = "Case Study",

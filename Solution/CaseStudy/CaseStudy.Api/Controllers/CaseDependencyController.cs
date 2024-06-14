@@ -1,4 +1,5 @@
 ﻿using CaseStudy.Api.CustomDependencyInjection;
+using CaseStudy.Api.CustomFilter;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
@@ -21,6 +22,14 @@ namespace CaseStudy.Api.Controllers
         {
             return _categoryRepository.AddCategory($"{CategoryName} => ");
         }
-        
+
+
+        [HttpGet("FilterClient")]
+        [SupervisorFilter]
+        public string FilterClient([Required] string Name)
+        {
+            return "Name : " + Name;
+        }
+
     }
 }
