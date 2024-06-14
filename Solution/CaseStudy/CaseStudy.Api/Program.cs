@@ -1,4 +1,5 @@
 ﻿using CaseStudy.Api.CustomDependencyInjection;
+using CaseStudy.Api.CustomEntityFramework;
 using CaseStudy.Api.CustomFolder;
 using CaseStudy.Api.CustomJwt;
 using CaseStudy.Api.CustomMiddleWares;
@@ -7,6 +8,9 @@ using CaseStudy.Persistence;
 using CaseStudy.Persistence.Contexts;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+using static System.Net.Mime.MediaTypeNames;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 AppSettings.Loading(builder.Configuration);
@@ -23,6 +27,7 @@ builder.Services.AddControllers(options =>
 //builder.Services.AddScoped<ICaseStudyStorage, CaseStudyLocalStorage>();
 builder.Services.AddScoped<ICaseStudyStorage, CaseStudyAzureStorage>();
 
+builder.Services.AddDbContext<CustomEntityMyDbContext>(o => o.UseSqlServer(AppSettings.ConnectionString));
 
 builder.Services.AddJwtServices();
 builder.Services.AddScoped<ICaseCategoryRepository, CategoryRepository>();
