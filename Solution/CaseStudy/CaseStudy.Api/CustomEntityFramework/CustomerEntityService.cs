@@ -7,9 +7,13 @@ namespace CaseStudy.Api.CustomEntityFramework
     public class CustomerEntityService
     {
         private readonly DbContextOptions _options;
-        public CustomerEntityService(DbContextOptions options)
+
+        //public CustomerEntityService(DbContextOptions options)
+
+        public CustomerEntityService()
         {
-            _options = options;
+            _options = new DbContextOptionsBuilder<CustomEntityMyDbContext>().UseSqlServer(Application.AppSettings.AppSettings.ConnectionString).Options;
+            //_options = options;
         }
         public void AddCustomer(Customer customer)
         {

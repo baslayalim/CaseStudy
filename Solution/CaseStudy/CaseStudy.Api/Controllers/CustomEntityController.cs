@@ -4,6 +4,7 @@ using CaseStudy.Persistence.Contexts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 
 namespace CaseStudy.Api.Controllers
 {
@@ -14,8 +15,9 @@ namespace CaseStudy.Api.Controllers
         [HttpGet]
         public Task<IActionResult> Get()
         {
-            var options = new DbContextOptionsBuilder<CustomEntityMyDbContext>().UseSqlServer(Application.AppSettings.AppSettings.ConnectionString).Options;
-            var customerService = new CustomerEntityService(options);
+            //var options = new DbContextOptionsBuilder<CustomEntityMyDbContext>().UseSqlServer(Application.AppSettings.AppSettings.ConnectionString).Options;
+            //var customerService = new CustomerEntityService(options);
+            var customerService = new CustomerEntityService();
 
 
             // Müşteri ekleme
@@ -37,6 +39,14 @@ namespace CaseStudy.Api.Controllers
             }
 
 
+            // Müşteri listeleme
+            var customers = customerService.GetCustomers();
+            foreach (var customer in customers)
+            {
+                Console.WriteLine($"{customer.Id} - {customer.Name} {customer.SurName} ({customer.Phone})");
+            }
+
+
             // Müşteri silme
             var customerToDelete = customerService.GetCustomers().FirstOrDefault();
             if (customerToDelete != null)
@@ -45,12 +55,6 @@ namespace CaseStudy.Api.Controllers
             }
 
 
-            // Müşteri listeleme
-            var customers = customerService.GetCustomers();
-            foreach (var customer in customers)
-            {
-                Console.WriteLine($"{customer.Id} - {customer.Name} {customer.SurName} ({customer.Phone})");
-            }
 
 
             return Task.FromResult<IActionResult>(Ok("Success"));
