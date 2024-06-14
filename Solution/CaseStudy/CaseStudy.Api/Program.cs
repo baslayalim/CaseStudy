@@ -4,7 +4,9 @@ using CaseStudy.Api.CustomJwt;
 using CaseStudy.Api.CustomMiddleWares;
 using CaseStudy.Application.AppSettings;
 using CaseStudy.Persistence;
+using CaseStudy.Persistence.Contexts;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
+using Microsoft.EntityFrameworkCore;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 AppSettings.Loading(builder.Configuration);
@@ -54,9 +56,9 @@ app.MapControllers();
 
 app.UseCors();
 
-//using var scope = app.Services.CreateScope();
-//await using var dbContext = scope.ServiceProvider.GetRequiredService<CaseStudyDbContext>();
-//await dbContext.Database.MigrateAsync();
+using var scope = app.Services.CreateScope();
+await using var dbContext = scope.ServiceProvider.GetRequiredService<CaseStudyDbContext>();
+await dbContext.Database.MigrateAsync();
 
 app.UseMiddleware<CaseStudyExceptionMiddleware>();
 
