@@ -30,6 +30,8 @@ namespace CaseStudy.Domain.Entities
         [Column(Order = 2)]
         public string? Phone { get; set; }
 
+        [MaxLength(20)]
+        public string? Hobi { get; set; }
 
         [Column("local_storage_table")]
         [Comment("Sayfaya Ait Js Kodunun Tutulduğu Alan")]

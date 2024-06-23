@@ -17,12 +17,13 @@ namespace CaseStudy.Persistence
             services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
             services.AddScoped<IProductReadRepository, ProductReadRepository>();
             services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
- 
-            
+
+
             //  Update-Database
             //  add-migration mig-0
             //  remove-migration
             //  services.AddSingleton<IProductService, ProductService>();
+            // Add-Migration mig-9 -context CaseStudyDbContext
 
         }
     }
