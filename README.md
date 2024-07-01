@@ -1,8 +1,9 @@
 # CaseStudy
 <img width="18" src="https://camo.githubusercontent.com/2e09a94059e9a08a036af4c5605dcd52c5b0761ece0b3b85ff12db6775865463/68747470733a2f2f692e6962622e636f2f50674737774d482f6b697461706c61722e706e67" alt="kitaplar" border="0" data-canonical-src="https://i.ibb.co/PgG7wMH/kitaplar.png" style="max-width: 100%;"> &nbsp; Baslayalim Case Study &nbsp; <img width="18" src="https://camo.githubusercontent.com/2e09a94059e9a08a036af4c5605dcd52c5b0761ece0b3b85ff12db6775865463/68747470733a2f2f692e6962622e636f2f50674737774d482f6b697461706c61722e706e67" alt="kitaplar" border="0" data-canonical-src="https://i.ibb.co/PgG7wMH/kitaplar.png" style="max-width: 100%;">
 
-
-<img width="18" src="https://camo.githubusercontent.com/79dca64f9f1a9969bae7cf05d90aa4a97b11a303719dd83b99075a66f14403a3/68747470733a2f2f692e6962622e636f2f6e724e647962372f70726f6a652e706e67" alt="proje" border="0" data-canonical-src="https://i.ibb.co/nrNdyb7/proje.png" style="max-width: 100%;"><center> <b>  DesignPatterns || Unit of work || Validation || Dependency Injection || Middleware || Exception Handling || .net core Cors || Authentication || Jwt </b></center>  <img width="18" src="https://camo.githubusercontent.com/79dca64f9f1a9969bae7cf05d90aa4a97b11a303719dd83b99075a66f14403a3/68747470733a2f2f692e6962622e636f2f6e724e647962372f70726f6a652e706e67" alt="proje" border="0" data-canonical-src="https://i.ibb.co/nrNdyb7/proje.png" style="max-width: 100%;">
+ 
+  <b>  DesignPatterns || Jwt || .Net Core || Unit of work || Validation || Dependency Injection || Middleware || Exception Handling || .net core Cors </b> 
+ 
 
   &nbsp;<img width="18" src="https://camo.githubusercontent.com/1f14b35923d63137c2054fe5f93c669dee7ac2c287a1a61c81af76e9e874a901/68747470733a2f2f692e6962622e636f2f4e4c6b7a6e434a2f79696c64697a2e706e67" alt="yildiz" border="0" data-canonical-src="https://i.ibb.co/NLkznCJ/yildiz.png" style="max-width: 100%;"> <b>  DesignPatterns </b>  <img width="18" src="https://camo.githubusercontent.com/1f14b35923d63137c2054fe5f93c669dee7ac2c287a1a61c81af76e9e874a901/68747470733a2f2f692e6962622e636f2f4e4c6b7a6e434a2f79696c64697a2e706e67" alt="yildiz" border="0" data-canonical-src="https://i.ibb.co/NLkznCJ/yildiz.png" style="max-width: 100%;">
 
