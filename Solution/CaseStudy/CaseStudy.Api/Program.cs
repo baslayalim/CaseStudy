@@ -1,4 +1,5 @@
-﻿using CaseStudy.Api.CustomDependencyInjection;
+﻿using CaseStudy.Api.CustomCqrsMediator;
+using CaseStudy.Api.CustomDependencyInjection;
 using CaseStudy.Api.CustomEntityFramework;
 using CaseStudy.Api.CustomFolder;
 using CaseStudy.Api.CustomJwt;
@@ -8,9 +9,6 @@ using CaseStudy.Persistence;
 using CaseStudy.Persistence.Contexts;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using static System.Net.Mime.MediaTypeNames;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 AppSettings.Loading(builder.Configuration);
@@ -33,7 +31,7 @@ builder.Services.AddJwtServices();
 builder.Services.AddScoped<ICaseCategoryRepository, CategoryRepository>();
 
 builder.Services.AddPersistenceServices();
-
+builder.Services.AddMediatRServices();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
