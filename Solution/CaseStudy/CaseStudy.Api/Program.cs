@@ -4,6 +4,7 @@ using CaseStudy.Api.CustomEntityFramework;
 using CaseStudy.Api.CustomFolder;
 using CaseStudy.Api.CustomJwt;
 using CaseStudy.Api.CustomMiddleWares;
+using CaseStudy.Api.Extensions;
 using CaseStudy.Application.AppSettings;
 using CaseStudy.Persistence;
 using CaseStudy.Persistence.Contexts;
@@ -105,6 +106,8 @@ if (app.Environment.IsProduction())
 app.UseSerilogRequestLogging();
 app.UseHttpLogging();
 
+app.ExceptionExtensionHandler<Program>(app.Services.GetRequiredService<ILogger<Program>>());
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 
@@ -130,6 +133,6 @@ using var scope = app.Services.CreateScope();
 await using var dbContext = scope.ServiceProvider.GetRequiredService<CaseStudyDbContext>();
 await dbContext.Database.MigrateAsync();
 
-app.UseMiddleware<CaseStudyExceptionMiddleware>();
+//app.UseMiddleware<CaseStudyExceptionMiddleware>();
 
 app.Run();
