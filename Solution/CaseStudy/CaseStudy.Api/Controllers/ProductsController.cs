@@ -1,4 +1,5 @@
-﻿using CaseStudy.Application.Repositories;
+﻿using CaseStudy.Api.CustomCqrsMediator.Features.Commands.Product.UpdateProdcut;
+using CaseStudy.Application.Repositories;
 using CaseStudy.Application.RequestParameters;
 using CaseStudy.Application.ViewModels.Products;
 using CaseStudy.Domain.Entities;
@@ -6,6 +7,7 @@ using CaseStudy.Persistence.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq.Expressions;
 using System.Net;
 
@@ -17,19 +19,28 @@ namespace CaseStudy.Api.Controllers
     {
         readonly private IProductWriteRepository _productWriteRepository;
         readonly private IProductReadRepository _productReadRepository;
+        readonly ILogger<UpdateProductCommandHandler> _logger;
 
         public ProductsController(
             IProductWriteRepository productWriteRepository,
-            IProductReadRepository productReadRepository)
+            IProductReadRepository productReadRepository,
+            ILogger<UpdateProductCommandHandler> logger)
         {
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
+            _logger = logger;
         }
 
         [HttpGet]
         public Task<IActionResult> Get()
         {
+            _logger.LogInformation("Product Get LogInformation");
+            _logger.LogCritical("Product Get LogCritical");
+            _logger.LogError("Product Get LogError");
+            _logger.LogWarning("Product Get LogWarning");
+
             return Task.FromResult<IActionResult>(Ok(_productReadRepository.GetAll(false)));
+
         }
 
         [HttpGet("Query")]
@@ -505,6 +516,10 @@ namespace CaseStudy.Api.Controllers
         [HttpGet("TestMiddleWare")]
         public String GetTestMiddleWare()
         {
+            _logger.LogInformation("GetTestMiddleWare LogInformation");
+            _logger.LogCritical("GetTestMiddleWare LogCritical");
+            _logger.LogError("GetTestMiddleWare LogError");
+            _logger.LogWarning("GetTestMiddleWare LogWarning");
             //throw new Exception("Test Error");
             return "OK";
         }

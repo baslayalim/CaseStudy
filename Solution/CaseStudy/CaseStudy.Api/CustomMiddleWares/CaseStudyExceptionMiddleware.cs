@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using CaseStudy.Api.CustomCqrsMediator.Features.Commands.Product.UpdateProdcut;
+using System.Net;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -11,11 +12,15 @@ namespace CaseStudy.Api.CustomMiddleWares
         private readonly RequestDelegate next;
         private readonly JsonSerializerOptions _jsonOption = new JsonSerializerOptions();
         private readonly IWebHostEnvironment _env;
+        readonly ILogger<UpdateProductCommandHandler> _logger;
 
-        public CaseStudyExceptionMiddleware(RequestDelegate Next, IWebHostEnvironment env)
+        public CaseStudyExceptionMiddleware(RequestDelegate Next, IWebHostEnvironment env,
+            ILogger<UpdateProductCommandHandler> logger)
         {
             next = Next;
             _env = env;
+            _logger = logger;
+
         }
 
         public async Task Invoke(HttpContext httpContext)
@@ -34,6 +39,8 @@ namespace CaseStudy.Api.CustomMiddleWares
             }
             catch (CaseStudyException exception)
             {
+                _logger.LogError(exception, exception.Message);
+
                 httpContext.Response.ContentType = "application/json";
                 httpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
 
@@ -55,6 +62,8 @@ namespace CaseStudy.Api.CustomMiddleWares
             }
             catch (AuthenticationException exception)
             {
+                _logger.LogError(exception, exception.Message);
+
                 httpContext.Response.ContentType = "application/json";
                 httpContext.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
 
@@ -76,6 +85,8 @@ namespace CaseStudy.Api.CustomMiddleWares
             }
             catch (Exception exception)
             {
+                _logger.LogError(exception, exception.Message);
+
                 httpContext.Response.ContentType = "application/json";
                 httpContext.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
