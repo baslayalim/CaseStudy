@@ -9,9 +9,12 @@ namespace CaseStudy.Api.Controllers
     [ApiController]
     public class MediatorController : ControllerBase
     {
-        readonly IMediator _mediator;
-        public MediatorController(IMediator mediator)
+        readonly IMediator _mediator; 
+        readonly IHttpContextAccessor _httpContextAccessor;
+
+        public MediatorController(IMediator mediator , IHttpContextAccessor httpContextAccessor)
         {
+            _httpContextAccessor = httpContextAccessor;
             _mediator = mediator;
         }
 
@@ -28,5 +31,14 @@ namespace CaseStudy.Api.Controllers
             GetAllProductQueryResponse response = await _mediator.Send(getAllProductQueryRequest);
             return Ok(response);
         }
+
+
+        [HttpGet("ContextControl")]
+        public string GetContextControl()
+        {
+            var username = _httpContextAccessor?.HttpContext?.User?.Identity?.Name;
+            return username;
+        }
+
     }
 }

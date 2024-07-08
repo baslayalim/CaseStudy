@@ -21,7 +21,7 @@ using System.Security.Claims;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 AppSettings.Loading(builder.Configuration);
-
+builder.Services.AddHttpContextAccessor(); // class methodlardan httpcontexte erisim
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
     policy.WithOrigins("https://localhost:7259").AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithExposedHeaders("Content-Disposition")
 ));
