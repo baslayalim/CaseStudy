@@ -24,7 +24,7 @@ namespace CaseStudy.Api.Controllers
                 Name = "Case Study",
                 UserName = "UserCaseStudy",
                 RefreshToken = customJwtHelper.CreateRefreshToken(),
-                Roles = { "AdminPlus", "Personnel" },
+                Roles = { "GET.Reading.RoleBasedActivities", "Personnel" },
                 RefreshTokenEndDate = DateTime.UtcNow.AddMinutes(customJwtHelper.RefreshTokenExpiration),
             });
 

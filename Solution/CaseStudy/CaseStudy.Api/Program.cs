@@ -1,9 +1,11 @@
 ﻿using CaseStudy.Api.CustomCqrsMediator;
 using CaseStudy.Api.CustomDependencyInjection;
 using CaseStudy.Api.CustomEntityFramework;
+using CaseStudy.Api.CustomFilter;
 using CaseStudy.Api.CustomFolder;
 using CaseStudy.Api.CustomJwt;
 using CaseStudy.Api.CustomMiddleWares;
+using CaseStudy.Api.CustomRoleBasedAttributes;
 using CaseStudy.Api.Extensions;
 using CaseStudy.Application.AppSettings;
 using CaseStudy.Persistence;
@@ -85,7 +87,10 @@ builder.Services.AddScoped<ICaseCategoryRepository, CategoryRepository>();
 
 builder.Services.AddPersistenceServices();
 builder.Services.AddMediatRServices();
-builder.Services.AddControllers();
+builder.Services.AddControllers(option => {
+    option.Filters.Add<RolePermissionFilter>();
+    option.Filters.Add<SupervisorFilter>();
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

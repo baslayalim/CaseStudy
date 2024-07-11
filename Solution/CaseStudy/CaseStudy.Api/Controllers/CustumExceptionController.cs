@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CaseStudy.Api.CustomRoleBasedAttributes;
+using Microsoft.AspNetCore.Mvc;
 using static CaseStudy.Api.Helper.ExceptionHelper;
 
 namespace CaseStudy.Api.Controllers
@@ -8,6 +9,8 @@ namespace CaseStudy.Api.Controllers
     public class CustumExceptionController : ControllerBase
     {
         [HttpGet]
+        [AuthorizeRoleBased(Menu = AuthorizeDefinition.Mediator, ActionType = ActionType.Updating, Definition = "Custum Exception", AppType = AppType.HumanResource)]
+
         public Task<IActionResult> GetCaseStudyException()
         {
             throw new CaseStudyException("CaseStudyException Error");

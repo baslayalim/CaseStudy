@@ -1,4 +1,5 @@
 ﻿using CaseStudy.Api.CustomCqrsMediator.Features.Commands.Product.UpdateProdcut;
+using CaseStudy.Api.CustomRoleBasedAttributes;
 using CaseStudy.Application.Repositories;
 using CaseStudy.Application.RequestParameters;
 using CaseStudy.Application.ViewModels.Products;
@@ -473,6 +474,7 @@ namespace CaseStudy.Api.Controllers
 
 
         [HttpPost]
+        [AuthorizeRoleBased(Menu = AuthorizeDefinition.Products, ActionType = ActionType.Writing, Definition = "Product Activities", AppType = AppType.ECommerce)]
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
             //ModelState.AddModelError("Special Error", "Bad Request");
