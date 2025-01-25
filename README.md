@@ -9,34 +9,34 @@
 
   &nbsp;<img width="18" src="https://camo.githubusercontent.com/1f14b35923d63137c2054fe5f93c669dee7ac2c287a1a61c81af76e9e874a901/68747470733a2f2f692e6962622e636f2f4e4c6b7a6e434a2f79696c64697a2e706e67" alt="yildiz" border="0" data-canonical-src="https://i.ibb.co/NLkznCJ/yildiz.png" style="max-width: 100%;"> Behavioral
 
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> ChainOfResponsibility <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Command <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> interpreter <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> iterator <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Mediator <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Memento <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Observer <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> State <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Strategy <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Template <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Visitor <br>
+<span style='font-size:30px;'>&#9997;</span> ChainOfResponsibility <br>
+<span style='font-size:30px;'>&#9997;</span> Command <br>
+<span style='font-size:30px;'>&#9997;</span> interpreter <br>
+<span style='font-size:30px;'>&#9997;</span> iterator <br>
+<span style='font-size:30px;'>&#9997;</span> Mediator <br>
+<span style='font-size:30px;'>&#9997;</span> Memento <br>
+<span style='font-size:30px;'>&#9997;</span> Observer <br>
+<span style='font-size:30px;'>&#9997;</span> State <br>
+<span style='font-size:30px;'>&#9997;</span> Strategy <br>
+<span style='font-size:30px;'>&#9997;</span> Template <br>
+<span style='font-size:30px;'>&#9997;</span> Visitor <br>
 
 
   &nbsp; <img width="18" src="https://camo.githubusercontent.com/1f14b35923d63137c2054fe5f93c669dee7ac2c287a1a61c81af76e9e874a901/68747470733a2f2f692e6962622e636f2f4e4c6b7a6e434a2f79696c64697a2e706e67" alt="yildiz" border="0" data-canonical-src="https://i.ibb.co/NLkznCJ/yildiz.png" style="max-width: 100%;"> Creational
 
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> AbstractFactory <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Builder <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Factory <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Prototype <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Singleton <br>
+<span style='font-size:30px;'>&#9997;</span> AbstractFactory <br>
+<span style='font-size:30px;'>&#9997;</span> Builder <br>
+<span style='font-size:30px;'>&#9997;</span> Factory <br>
+<span style='font-size:30px;'>&#9997;</span> Prototype <br>
+<span style='font-size:30px;'>&#9997;</span> Singleton <br>
 
 
 &nbsp; <img width="18" src="https://camo.githubusercontent.com/1f14b35923d63137c2054fe5f93c669dee7ac2c287a1a61c81af76e9e874a901/68747470733a2f2f692e6962622e636f2f4e4c6b7a6e434a2f79696c64697a2e706e67" alt="yildiz" border="0" data-canonical-src="https://i.ibb.co/NLkznCJ/yildiz.png" style="max-width: 100%;"> Structural
 
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Adapter <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Bridge <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Composite <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Decorator <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Facade <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Flyweight <br>
-<img width="18" src="https://camo.githubusercontent.com/b232f3f81f38c4cf6a2d8e5c9b06f02f847e91814ee5a16c7cf198be35a4f633/68747470733a2f2f692e6962622e636f2f79594b3559597a2f6e6574776f726b2d70656e74657374696e672e706e67" alt="network-pentesting" border="0" data-canonical-src="https://i.ibb.co/yYK5YYz/network-pentesting.png" style="max-width: 100%;"> Proxy <br>
+<span style='font-size:30px;'>&#9997;</span> Adapter <br>
+<span style='font-size:30px;'>&#9997;</span> Bridge <br>
+<span style='font-size:30px;'>&#9997;</span> Composite <br>
+<span style='font-size:30px;'>&#9997;</span> Decorator <br>
+<span style='font-size:30px;'>&#9997;</span> Facade <br>
+<span style='font-size:30px;'>&#9997;</span> Flyweight <br>
+<span style='font-size:30px;'>&#9997;</span> Proxy <br>
